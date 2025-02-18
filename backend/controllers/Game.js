@@ -1,4 +1,4 @@
-import Game from "../models/Game";
+import Game from "../models/Game.js";
 import mongoose from "mongoose";
 
 // Create a new game

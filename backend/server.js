@@ -1,8 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
-import Game from "./models/Game.js";
-import monggoose from "mongoose";
+import Game from "./routes/Game.js";
 
 dotenv.config();
 
