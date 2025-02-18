@@ -3,9 +3,9 @@ import { getGames, createGame, updateGame, deleteGame } from "../controllers/Gam
 
 const router = express.Router();
 
-router.post('/', createGame); // Create a new game
-router.get('/', getGames); // Fetch all games
-router.put('/:id', updateGame); // Update a game
-router.delete('/:id', deleteGame); // Delete a game
+router.post('/', createGame); 
+router.get('/', getGames); 
+router.put('/:id', updateGame); 
+router.delete('/:id', deleteGame); 
 
 export default router;

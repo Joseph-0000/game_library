@@ -1,6 +1,7 @@
 import Game from "../models/Game";
 import mongoose from "mongoose";
 
+// Create a new game
 export const createGame = async (req, res) => {
     const game = req.body;
 
@@ -18,6 +19,7 @@ export const createGame = async (req, res) => {
     }
 }
 
+// Fetch all games
 export const getGames = async (req, res) => {
     try {
         const games = await Game.find();
@@ -28,6 +30,7 @@ export const getGames = async (req, res) => {
     }
 }
 
+// Update a game
 export const updateGame = async (req, res) => {
     const { id } = req.params;
     const game = req.body;
@@ -45,6 +48,7 @@ export const updateGame = async (req, res) => {
     }
 }
 
+// Delete a game
 export const deleteGame = async (req, res) => {
     const { id } = req.params;
     try {

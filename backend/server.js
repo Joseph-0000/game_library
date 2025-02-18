@@ -12,6 +12,7 @@ app.use(express.json());
 
 app.use('/api/games', Game);
 
+// Start server and connect to database
 app.listen(3000, () => { 
     connectDB();
     console.log("Server is running on port 3000")
